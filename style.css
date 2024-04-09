@@ -23,6 +23,9 @@ main {
 footer {
     width: 100%;
     color: var(--color-text-primary);
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
 }
 
 .footer_links {
@@ -32,8 +35,9 @@ footer {
 #footer_initial {
     background-color: var(--color-secondary);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3.5rem;
+    align-items: center;
 }
 
 #footer_contato h1 {
@@ -42,7 +46,8 @@ footer {
 
 #footer_redes_sociais {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    gap: 20px;
     margin-top: 1.5rem;
 } 
 
