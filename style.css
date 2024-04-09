@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-primary: #010101;
+    --color-secondary: #17191a;
+    --color-text-secondary: #838f99;
+    --color-text-primary: #f8f8f8;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-text-primary);
+}
+
+.footer_links {
+    text-decoration: none;
+}
+
+#footer_initial {
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contato h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_redes_sociais {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_redes_sociais .footer_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-text-primary);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_redes_sociais .footer_links i {
+    font-size: 1.25rem;    
+}
+
+#footer_redes_sociais .footer_links:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#linkedin {
+    background-color: #0e76a8;
+}
+
+#github {
+    background-color: #000;
+}
+
+.footer_lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer_lista .footer_links {
+    color: var(--color-text-secondary);
+    transition: all 0.4s;
+}
+
+.footer_lista .footer_links:hover {
+    color: #7f37c9;
+}
+
+#btnVoltarAoTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    display: none; 
+    background-color: #7f37c9; 
+    color: var(--color-text-primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px; 
+    opacity: 0.9;
+    transition: opacity 0.4s, transform 0.2s; 
+}
+
+#btnVoltarAoTopo:hover {
+    opacity: 1;
+}
+
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
