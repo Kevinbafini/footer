@@ -42,8 +42,20 @@ footer {
     align-items: center;
 }
 
-#footer_contato h1 {
+/* logo e texto */
+
+#footer_contato img {
+    width: 125px;
     margin-bottom: 0.75rem;
+}
+
+#footer_contato img:hover {
+    opacity: 0.9;
+}
+
+#footer_contato a {
+    color: var(--color-text-primary);
+    text-decoration:none;
 }
 
 /* redes sociais */
@@ -144,7 +156,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     #footer_initial {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 }
